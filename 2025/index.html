@@ -1,58 +1,83 @@
-<!DOCTYPE html> <!--문서 유형 형성-->
-
+<!DOCTYPE html>
+<!--문서유형선언-->
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="style.css"/>
-        <title> 김데이터의 이력서 </title>
-    </head>
-    <body>
-        <header>
-            <h1>김데이터</h1>
-            <p>데이터를 통해 비즈니스 문제를 해결하고 가치를 창출하는 경험이 풍부한 데이터 분석가입니다.</p>
-        </header>
-        <main>
-            <section>
-                <h2>Contact</h2>
-                <p><b>휴대폰</b> : 010-1234-5678</p>
-                <p><b>이메일</b> : kimdata@example.com</p>
-                <p><b>주소</b> : 서울시 강남구 테헤란로</p>
-                <p><b>소셜</b>
-                </p>
-                    <div>
-                    <a href="https://www.linkedin.com/">링크드인</a>
-                    <a href="https://github.com/">깃허브</a>
-                    <a href="https://www.instagram.com/">인스타그램</a>
-                    </div>
-            </section>
-            <section>
-                <h2>스킬</h2>
-                <ul>
-                    <li>python</li>
-                    <li>R</li>
-                    <li>SQL</li>
-                    <li>Tableau</li>
-                    <li>Machine Learning</li>
-                </ul>
-            </section>
-            <section>
-                <h2>교육</h2>
-                <ul>
-                    <li>서울대학교 컴퓨터 공학과, 학사</li>
-                    <li>KAIST 데이터 사이언스 석사</li>
-                </ul>
-            </section>
-            <section>
-                <h2>프로젝트</h2>
-                <ol>
-                    <li>고객 세그멘테이션을 위한 클러스터링 분석</li>
-                    <p>이 프로젝트에서는 K-means 알고리즘을 사용하여 고객 데이터를 분석하고 세그먼트를 생성했습니다. 결과적으로 마케팅 팀이 타겟팅 전략을 더 효율적으로 수행할 수 있었습니다.</p>
-                    <li>시계열 데이터를 활용한 매출 예측 모델 개발</li>
-                    <p>ARIMA 모델을 활용하여 회사의 분기별 매출을 예측했습니다. 이 모델은 실제 매출과 95%의 정확도로 일치하는 결과를 보였습니다.</p>
-                    <li>자연어 처리를 이용한 고객 리뷰 분석</li>
-                    <p>고객 리뷰 데이터를 수집하여 감정 분석을 수행했습니다. 이를 통해 제품 개선 포인트와 고객 만족도를 측정할 수 있었습니다.</p>
-                </ol>
-            </section>
-        </main>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <!--character set-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>김데이터의 이력서</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="name">김데이터</h1>
+      <p id="introduction">
+        데이터를 통해 비지니스 문제를 해결하고 가치를 창출하는 경험이 풍부한
+        데이터 분석가입니다.
+      </p>
+    </header>
+    <main>
+      <section class="main-section contact-section">
+        <h2>Contact</h2>
+        <p id="mobile"><b>Mobile:</b> 010-1234-5678</p>
+        <p id="email"><b>E-mail:</b> kimdata@example.com</p>
+        <p id="address"><b>Address:</b> 서울시 강남구 테헤란로</p>
+        <p>
+          <b>Socials & Websites:</b>
+        </p>
+        <div id="socials-div">
+          <a id="linkedin_link" href="https://www.linkedin.com/">LinkedIn</a>
+          <a id="github_link" href="https://github.com/">GitHub</a>
+          <a id="instagram_link" href="https://www.instagram.com/">Instagram</a>
+        </div>
+      </section>
+      <section class="main-section skills-section">
+        <h2>Skills</h2>
+        <ul>
+          <!--unordered list-->
+          <!--list item-->
+          <li>Python</li>
+          <li>R</li>
+          <li>SQL</li>
+          <li>Tableau</li>
+          <li>Machine Learning</li>
+        </ul>
+      </section>
+      <section class="main-section education-section">
+        <h2>Education</h2>
+        <ul>
+          <li>서울대학교 컴퓨터 공학과, 학사</li>
+          <li>KAIST 데이터 사이언스, 석사</li>
+        </ul>
+      </section>
+      <section class="main-section projects-section">
+        <h2>Projects</h2>
+        <ol>
+          <!--ordered list-->
+          <li>
+            고객 세그멘테이션을 위한 클러스터링 분석
+            <p>
+              이 프로젝트에서는 K-means 알고리즘을 사용하여 고객 데이터를
+              분석하고 세그먼트를 생성했습니다. 결과적으로 마케팅 팀이 타겟팅
+              전략을 더 효율적으로 수행할 수 있었습니다.
+            </p>
+          </li>
+          <li>
+            시계열 데이터를 활용한 매출 예측 모델 개발
+            <p>
+              ARIMA 모델을 활용하여 회사의 분기별 매출을 예측했습니다. 이 모델은
+              실제 매출과 95%의 정확도로 일치하는 결과를 보였습니다.
+            </p>
+          </li>
+          <li>
+            자연어 처리를 이용한 고객 리뷰 분석
+            <p>
+              고객 리뷰 데이터를 수집하여 감정 분석을 수행했습니다. 이를 통해
+              제품 개선 포인트와 고객 만족도를 측정할 수 있었습니다.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </main>
+  </body>
 </html>
